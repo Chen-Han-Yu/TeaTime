@@ -2,8 +2,10 @@ using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using TeaTime.Models;
 
-namespace TeaTime.Controllers
+namespace TeaTime.Areas.Customer.Controllers
 {
+    //°Ï°ì·s¼W
+    [Area("Customer")]
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;

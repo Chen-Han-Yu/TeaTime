@@ -1,9 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.13.35931.197 d17.13
+VisualStudioVersion = 17.13.35931.197
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TeaTime", "TeaTime\TeaTime.csproj", "{71A0BADD-EB70-415C-9544-A17483B7BA4E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TeaTime.DataAccess", "TeaTime.DataAccess\TeaTime.DataAccess.csproj", "{C4C250D7-81C7-473A-B94A-E295CE0C32FE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TeaTime.Models", "TeaTime.Models\TeaTime.Models.csproj", "{64E90511-3EA6-489E-9B46-D335360CE8C8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TeaTime.Utility", "TeaTime.Utility\TeaTime.Utility.csproj", "{D7109B4F-5624-44DA-82A5-221B360B5220}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +21,18 @@ Global
 		{71A0BADD-EB70-415C-9544-A17483B7BA4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{71A0BADD-EB70-415C-9544-A17483B7BA4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{71A0BADD-EB70-415C-9544-A17483B7BA4E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C4C250D7-81C7-473A-B94A-E295CE0C32FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C4C250D7-81C7-473A-B94A-E295CE0C32FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C4C250D7-81C7-473A-B94A-E295CE0C32FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C4C250D7-81C7-473A-B94A-E295CE0C32FE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{64E90511-3EA6-489E-9B46-D335360CE8C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64E90511-3EA6-489E-9B46-D335360CE8C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64E90511-3EA6-489E-9B46-D335360CE8C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64E90511-3EA6-489E-9B46-D335360CE8C8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D7109B4F-5624-44DA-82A5-221B360B5220}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7109B4F-5624-44DA-82A5-221B360B5220}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7109B4F-5624-44DA-82A5-221B360B5220}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7109B4F-5624-44DA-82A5-221B360B5220}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

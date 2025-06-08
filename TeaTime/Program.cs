@@ -1,5 +1,7 @@
 using Microsoft.EntityFrameworkCore;
-using TeaTime.Data;
+using TeaTime.DataAccess.Data;
+using TeaTime.DataAccess.Repository;
+using TeaTime.DataAccess.Repository.IRepository;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -10,7 +12,10 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 {
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
 });
-
+// 新增資料庫存取的Repository
+//builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
+// 新增UnitOfWork
+builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -30,6 +35,6 @@ app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
-
+    //pattern: "{controller=Home}/{action=Index}/{id?}");
+    pattern: "{area=Customer}/{controller=Home}/{action=Index}/{id?}");
 app.Run();
